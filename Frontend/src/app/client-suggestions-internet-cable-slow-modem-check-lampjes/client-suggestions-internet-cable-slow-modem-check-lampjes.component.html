@@ -1,0 +1,144 @@
+<!--Showcase text van de pagina-->
+<div class="container">
+
+  <div class="services">
+
+    <!--Begin-->
+    <h1 style=" color:black">1.Selecteer je modem</h1>
+
+    <!--Connectbox-->
+    <div class="cen">
+      <div class="service">
+        <a>
+          <button (click)="WiDraFunction()" onclick="document.getElementById('id01').style.display='block'"
+                  class="w3-button w3-black"><img src='../../assets/Modem.png' width="42" height="42" id="connectbox">
+          </button>
+        </a>
+        <h2 style=" color:black" class="Connectbox">Connectbox</h2>
+      </div>
+
+      <!--Technicolor -->
+      <div class="service">
+        <a>
+          <button (click)="IVDFunction()" onclick="document.getElementById('id01').style.display='block'"
+                  class="w3-button w3-black"><img src='../../assets/Technicolor.jpg' width="42" height="42"
+                                                  id="technicolor"></button>
+        </a>
+        <h2 style=" color:black" class="Technicolor">Technicolor</h2>
+      </div>
+
+      <!--Hitron-->
+      <div class="service">
+        <a>
+          <button (click)="ITVFunction()" onclick="document.getElementById('id01').style.display='block'"
+                  class="w3-button w3-black"><img src='../../assets/Hitron.jpg' width="42" height="42" id="hitron">
+          </button>
+        </a>
+        <h2 style=" color:black" class="Hitron">Hitron</h2>
+      </div>
+
+      <!--Cisco-->
+      <div class="service">
+        <a>
+          <button (click)="VTFunction()" onclick="document.getElementById('id01').style.display='block'"
+                  class="w3-button w3-black"><img src='../../assets/Cisco.jpg' width="42" height="42" id="cisco">
+          </button>
+        </a>
+        <h2 style=" color:black" class="Cisco">Cisco</h2>
+      </div>
+
+      <!--Ubee -->
+      <div class="service">
+        <a>
+          <button (click)="INFunction()" onclick="document.getElementById('id01').style.display='block'"
+                  class="w3-button w3-black"><img src='../../assets/Ubee.jpg' width="42" height="42" id="ubee"></button>
+        </a>
+        <h2 style=" color:black" class="Ubee">Ubee</h2>
+      </div>
+
+      <!--Thomson-->
+      <div class="service">
+        <a>
+          <button (click)="ITVFunction()" onclick="document.getElementById('id01').style.display='block'"
+                  class="w3-button w3-black"><img src='../../assets/Thomson.jpg' width="42" height="42" id="thomson">
+          </button>
+        </a>
+        <h2 style=" color:black" class="Interactieve-TV">Thomson</h2>
+      </div>
+
+      <!--Andere modems-->
+      <div class="service">
+        <a>
+          <button (click)="VTFunction()" onclick="document.getElementById('id01').style.display='block'"
+                  class="w3-button w3-black"><img src='../../assets/AndereModem.jpg' width="42" height="42"
+                                                  id="andereModem"></button>
+        </a>
+        <h2 style=" color:black" class="Andere-Modem">Andere Modem</h2>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--Pop-up 1-->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <h4 style="text-align:center; color: black;"><b> 2.Lampjes op de Connectbox</b></h4>
+
+        <div style="text-align: left;">
+
+          <p>
+            Op de voorkant van het modem staat een Ziggo logo. Daaronder is een statuslampje te zien. Deze kan in
+            meerdere kleuren oplichten. Ook boven het logo kunnen er meerdere lampjes branden. Het modem krijgt een goed
+            internetsignaal binnen als:
+
+            het statuslampje onder het Ziggo logo wit brandt
+            of als:
+
+            het statuslampje onder het Ziggo logo wit brandt én er drie groene lampjes branden boven het Ziggo logo
+          </p>
+
+          <br>
+
+          <h4 style="text-align:center; color: black;"><b> 3.Lampjes op de Connectbox</b></h4>
+
+          <p>
+            Bij een bedrade verbinding met internet maak je gebruik van een netwerkkabel. Controleer of de netwerkkabel
+            nog goed in je modem zit.
+          </p>
+
+          <h4 style="text-align:center; color: black;"><b> 4.Check de lampjes op het modem</b></h4>
+
+          <p>
+            In de vorige stap heb je gecheckt of je netwerkkabel goed in het modem zit. Kijk nu naar de achterkant van
+            het modem waar de netwerkkabel is aangesloten. Er hoort een lampje te knipperen bij de ethernetpoort waar de
+            netwerkkabel in zit. Dit lampje knippert als er een verbinding is met het apparaat (bijv. je computer of
+            router) waar het met deze kabel is verbonden.
+
+            Het lampje op je modem kan alleen knipperen als het apparaat waar deze mee is verbonden via netwerkkabel ook
+            aan staat.
+          </p>
+
+          <br>
+
+          <h4 style="text-align:center; color: black;"><b> Als de info op deze pagina niet geholpen heeft om het
+            probleem te verhelpen, contacteer dan een verituele assistent van ons.</b></h4>
+
+          <br>
+
+          <button style="float:right" class="supportButton" routerLink="/client-chat">Laten we het samen verder
+            oplossen
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+

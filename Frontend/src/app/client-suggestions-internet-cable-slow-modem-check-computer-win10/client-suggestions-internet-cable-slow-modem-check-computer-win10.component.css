@@ -1,0 +1,101 @@
+.service{
+  display: inline-block;
+  width: calc(100% / 10);
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.service:hover{
+  background: #ddd;
+}
+.service i{
+  color: #e67e22;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.service p{
+  color: gray;
+  font-size: 15px;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .service{
+    width: 50%
+  }
+}
+@media screen and (max-width: 500px) {
+  .service {
+    width: 100%
+  }
+}
+
+.w3-button w3-black{
+  font-size: 18px;
+  text-decoration:none;
+  color:#FFA500;
+  border:#FFA500 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top:70px;
+}
+
+.w3-button w3-black:hover{
+  background:#FFA500;
+  color:#fff;
+}
+
+/*#showcase .button{*/
+/*font-size: 18px;*/
+/*text-decoration:none;*/
+/*color:#FFA500;*/
+/*border:#FFA500 1px solid;*/
+/*padding: 10px 20px;*/
+/*border-radius: 10px;*/
+/*margin-top:70px;*/
+/*}*/
+
+/*#showcase .button:hover{*/
+/*background:#FFA500;*/
+/*color:#fff;*/
+/*}*/
+
+#showcase .buttonRight{
+  font-size: 18px;
+  text-decoration:none;
+  color:#FFA500;
+  border:#FFA500 1px solid;
+  padding: 2px 3px;
+  border-radius: 10px;
+  margin-top:70px;
+  width: 250px;
+  height: 50px;
+  display: inline-block;
+  text-align:center;
+}
+
+#showcase .buttonRight:hover{
+  background:#FFA500;
+  color:#fff;
+}
+
+#showcase .buttonLeft{
+  font-size: 18px;
+  text-decoration:none;
+  color:#FFA500;
+  border:#FFA500 1px solid;
+  padding: 2px 3px;
+  border-radius: 10px;
+  margin-top:70px;
+  margin-right: 30px;
+  width: 250px;
+  height: 50px;
+  display: inline-block;
+  text-align:center;
+}
+
+#showcase .buttonLeft:hover{
+  background:#FFA500;
+  color:#fff;
+}

@@ -1,0 +1,13 @@
+<div class="sidenav">
+  <ul>
+    <li class="headerItem" *ngFor="let chat of openChats">
+      <a href="employee-chat" class="listButton" (click)="sendId(chat?.sessionId)">
+        <div class="desc">
+          <h4><strong>{{chat?.username}}</strong></h4>
+          <p class="date"><em>{{chat?.date}}</em></p>
+          <p class="message">{{chat?.lastMessage}}"Bericht praten enzo..."</p>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>

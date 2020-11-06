@@ -1,0 +1,69 @@
+/* The sidebar menu */
+.sidenav {
+  margin-top: 70px;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 250px; /* Set the width of the sidebar */
+  position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  /*background-color: #f2f2f2;*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  text-decoration: none;
+  color: #111;
+  display: inline-block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #ff9900;
+  cursor: pointer;
+}
+
+.sidenav h4 {
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style-type: none;
+  width: 90%;
+}
+
+.message {
+  margin: 0px;
+}
+
+.desc{
+  overflow: hidden;
+  float: left;
+  text-align: left;
+  position: relative;
+  font-size: 10px;
+  width: calc(100% - 10px);
+}
+
+.listButton {
+  width: 200px;
+  margin-bottom: 10px;
+  background-color: #f6f7f8;
+  border: 1px solid #e7e7e7;
+  padding: 10px;
+}
+
+.headerItem {
+  float: left;
+  margin-left: -15px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

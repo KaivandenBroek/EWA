@@ -1,0 +1,82 @@
+<app-employee-chat-sidebar></app-employee-chat-sidebar>
+
+<div class="container">
+  <div class="widget-chatInfo">
+    <div class="problem"><h2>Issue {{issueId}}</h2></div>
+    <div class="isNew"><h2 class="isNew">{{showstatus}}</h2></div>
+    <div class="date"><h2>{{getDatum}}</h2></div>
+  </div>
+  <div class="window">
+    <div class="widget-chat">
+      <div class="chat">
+        <div class="chat-screen" id="style1">
+          <ng-container *ngFor="let message of messagesArray">
+            <div class="message" [ngClass]="{ 'from': checkMessageOrigin(message) === true,
+          'to' : checkMessageOrigin(message) === true }  ">
+              {{ message }}
+            </div>
+          </ng-container>
+        </div>
+        <label>Uw bericht</label>
+
+        <label for="messageText"></label><input for="messageText" class="form-control" id="messageText"
+                                                [(ngModel)]="value" (keyup.enter)="sendMessage()" type="text"><br>
+
+        <button class="btn ziggo-oranje" (click)="sendMessage()">Verstuur</button>
+      </div>
+    </div>
+    <div class="widget-menu">
+      <div class="tagArea">
+        <h2 class="tagTitle">Tags</h2>
+        <div class="tagsBox">
+          <label *ngFor="let tag of tags">
+            <span class="badge">{{tag}}</span>
+          </label>
+        </div>
+      </div>
+      <div class="costumerData">
+        <h2 class="textBanner">Klantgegevens</h2>
+        <div class="listItem">
+          <ul *ngFor="let item of itemList">
+            <li>
+              <p class="dataList">{{item?.username}}</p>
+              <p class="dataList">{{item?.userId}}</p>
+              <p class="dataList">{{item?.modem}}</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="notesBox">
+        <h2>Notes</h2>
+        <label for="notesArea"></label>
+        <textarea id="notesArea" placeholder="Notes here"></textarea>
+        <button class="buttonNotes btn ziggo-oranje" type="submit" value="save">Save notes</button>
+      </div>
+      <hr>
+      <div class="widget-buttons">
+        <div>
+          <button class="buttonSubmit btn ziggo-oranje" routerLink="/employee-dashboard" (click)="markSolved()">Save
+            chat as solved
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<div class="chat-screen" id="style1">-->
+<!--<ng-container *ngFor="let message of messagesArray | async">-->
+<!--<div class="message" [ngClass]="{ 'from': message.sentBy === 'bot', 'to':   message.sentBy === 'user' }">-->
+<!--{{ message }}-->
+<!--</div>-->
+<!--&lt;!&ndash;<div class="time" [ngClass]="{ 'timefrom': message.sentBy === 'bot', 'timeto':   message.sentBy === 'user' }"><em>{{ message.dateNow }}</em></div>&ndash;&gt;-->
+<!--<div id="messagesTextArea" readonly="readonly" *ngIf="messageArea" [innerHTML]="messageArea"></div>-->
+<!--</ng-container>-->
+<!--</div>-->
+
+<!--<div class="Chat">-->
+<!--<label for="messagesTextArea"></label><textarea class="history" id="messagesTextArea" readonly="readonly" rows="10" cols="45" *ngIf="messageArea" [innerHTML]="messageArea"></textarea><br/>-->
+<!--<label for="messageText"></label><input type="text" id="messageText" [(ngModel)]="value" size="50"/><button (click)="sendMessage()">Send Message</button>-->
+<!--</div>-->
+
+

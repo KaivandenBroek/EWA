@@ -1,0 +1,64 @@
+<!--Showcase text van de pagina-->
+<div id="showcase">
+  <section class="section-component">
+    <div class="container">
+      <h1>Wifi-problemen oplossen</h1>
+      <p><strong>Werkt je wifi niet top? Of je wifi nu tijdelijk hapert of helemaal niets meer doet: we lossen het samen
+        op. Gegarandeerd.</strong></p>
+    </div>
+  </section>
+
+  <div class="services">
+    <div class="container">
+      <h2><strong>Checklist</strong></h2>
+
+      <button class="accordion">Check je modem</button>
+      <div class="panel">
+        <p>Geen storing gevonden? Dan is er misschien iets met je modem aan de hand. Doen de lampjes op het modem het
+          wel goed? Dat checken we samen met je in ons stappenplan.</p>
+        <br>
+        <!--      <a href="client-suggestions-internet-wifi-slow-modem-check" class="supportButton">Check je modem zo</a>-->
+      </div>
+
+      <button class="accordion">Reset je modem</button>
+      <div class="panel">
+        <p>Nog steeds geen goede wifi-verbinding? In veel gevallen helpt het om je wifi-modem opnieuw op te starten.
+          Daar helpen we je natuurlijk graag mee.</p>
+        <br>
+        <!--      <a href="client-suggestions-internet-wifi-slow-modem-resetten" class="supportButton">Reset je modem zo</a>-->
+      </div>
+
+      <button class="accordion">Maak verbinding met het juiste netwerk</button>
+      <div class="panel">
+        <p>Soms heeft je wifi-apparaat onbedoeld verbinding met een netwerk in de buurt. Bijvoorbeeld omdat je ooit hebt
+          ingelogd op de wifi van het koffietentje op de hoek of bij de buren. Hierdoor kun je traag internet krijgen.
+          Check daarom of je met je eigen netwerk bent verbonden. Als je geen eigen netwerknaam hebt ingesteld, begint
+          de netwerknaam meestal met ziggoXXXX.
+
+          Als je niet met het juiste netwerk bent verbonden, kun je het beste de verbinding vergeten en daarna weer
+          opnieuw verbinding maken. Dat is zó gepiept.</p>
+        <br>
+        <!--      <a href="client-suggestions-internet-wifi-slow-maak-verbinding" class="supportButton">Zoek juiste netwerk</a>-->
+      </div>
+
+      <br><br>
+
+      <p>Heeft de informatie op deze pagina je geholpen? Zo nee, dan niet getreurd. Selecteer dan eerst je modem en stel
+        de vraag aan onze virtuele assistent.</p>
+
+      <h3><strong>Kies je modem</strong></h3>
+      <select name="modems" (change)="selectChangeHandler($event)" [(ngModel)]="selectedValue">
+        <option name="modems" *ngFor="let modem of modems" [value]="modem.idModem">
+          {{modem.modemNaam}}
+        </option>
+      </select>
+      <br><br>
+      <!--Buttons-->
+      <div class="service">
+        <a (click)="tagToTagService()" routerLink="/client-chat" style="float:left" class="supportButton">Stel een
+          vraag</a>
+      </div>
+    </div>
+
+  </div>
+</div>

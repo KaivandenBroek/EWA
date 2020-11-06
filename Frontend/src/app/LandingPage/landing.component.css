@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding:0;
+}
+body{
+   margin:0;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   font-size:17px;
+   color:#FFA500;
+   line-height:1.6;
+ }
+
+#showcase{
+  background-image:url('../../assets/Desk.jpeg');
+  background-size:cover;
+  background-position: center;
+  height:90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+#showcase h1{
+  position: relative;
+  bottom: 200px;
+  font-size:48px;
+  line-height: 1.2;
+  color: orange;
+}
+
+#showcase span{
+  position: relative;
+  bottom: 180px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: black;
+}
+
+#showcase .login{
+  position: relative;
+  bottom: 180px;
+  font-size: 18px;
+  text-decoration:none;
+  background-color: orange;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+

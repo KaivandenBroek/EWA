@@ -1,0 +1,28 @@
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.employees-page {
+    padding: 20px 0;
+}
+
+.table>thead>tr>th {
+    border-bottom: 0px;
+}
+
+.page-tabs {
+    width: 100%;
+    text-align: center;
+}
+
+.my-pagination /deep/ .ngx-pagination .current {
+    background: orange;
+}
+
+.my-pagination /deep/ .ngx-pagination .pagination-previous a::before,
+.my-pagination /deep/ .ngx-pagination .pagination-previous.disabled::before,
+.my-pagination /deep/ .ngx-pagination .pagination-next a::after,
+.my-pagination /deep/ .ngx-pagination .pagination-next.disabled::after { 
+  content: '' !important; 
+}

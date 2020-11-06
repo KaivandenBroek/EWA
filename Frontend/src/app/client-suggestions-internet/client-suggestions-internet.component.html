@@ -1,0 +1,83 @@
+<!--Showcase text van de pagina-->
+<div id="showcase">
+  <section class="section-component">
+    <div class="container">
+      <h1>Internet en wifi repareren</h1>
+      <p><strong>Als je een storing hebt met je internetverbinding, is dat heel vervelend. Gelukkig kun je veel stappen
+        zelf ondernemen om het op te lossen.</strong></p>
+    </div>
+  </section>
+
+  <div class="services">
+    <div class="container">
+      <h2><strong>Wat wil je repareren</strong></h2>
+
+
+      <!--    /**-->
+      <!--      * the WiDraFunction() method is a get mehtode that displays a number variable in the console log.-->
+      <!--      * it also retrieves the tag ID from the database. The variable is in fact the same as the tagID attribute in the database.-->
+      <!--      * As a result, the program knows exactly which tag it is.-->
+      <!--      * @WiDraFunction()-->
+      <!--      */-->
+      <div class="service" (click)="WiDraFunction()" onclick="document.getElementById('id01').style.display='block'">
+        <i class="fas fa-wifi"></i>
+        Wifi / draadloos
+      </div>
+
+      <!--     /**-->
+      <!--      * the IVDFunction() method is a get mehtode that displays a number variable in the console log.-->
+      <!--      * it also retrieves the tag ID from the database. The variable is in fact the same as the tagID attribute in the database.-->
+      <!--      * As a result, the program knows exactly which tag it is.-->
+      <!--      * @IVDFunction()-->
+      <!--      */-->
+      <div class="service" (click)="IVDFunction()" onclick="document.getElementById('id02').style.display='block'">
+        <i class="fas fa-desktop"></i>
+        Internet via een kabel
+      </div>
+
+      <!--Pop-up-->
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h4 style="text-align:center; color: black;"><b>Werkt het traag of helemaal niet?</b></h4>
+            <div style="text-align: center;">
+              <a href="client-suggestions-internet-wifi-slow" class="buttonLeft" (click)="WiTraagFunction()"> Traag</a>
+              <a href="client-suggestions-internet-wifi-dont-work" class="buttonRight" (click)="WiNietFunction()">Helemaal
+                niet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Pop-up-->
+      <div id="id02" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h4 style="text-align:center; color: black;"><b>Werkt bekabeld internet traag of helemaal niet?</b></h4>
+            <div style="text-align: center;">
+
+              <!--            /**-->
+              <!--              * the IVDTraagFunction() method is a get mehtode that displays a number variable in the console log.-->
+              <!--              * it also retrieves the tag ID from the database. The variable is in fact the same as the tagID attribute in the database.-->
+              <!--              * As a result, the program knows exactly which tag it is.-->
+              <!--              * @IVDTraagFunction()-->
+              <!--              */-->
+              <a href="client-suggestions-internet-cable-slow" class="buttonLeft" (click)="IVDTraagFunction()">Traag</a>
+
+              <!--             /**-->
+              <!--              * the IVDNietFunction() method is a get mehtode that displays a number variable in the console log.-->
+              <!--              * it also retrieves the tag ID from the database. The variable is in fact the same as the tagID attribute in the database.-->
+              <!--              * As a result, the program knows exactly which tag it is.-->
+              <!--              * @IVDNietFunction()-->
+              <!--              */-->
+              <a href="client-suggestions-internet-cable-dont-work" class="buttonRight" (click)="IVDNietFunction()">Helemaal
+                niet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

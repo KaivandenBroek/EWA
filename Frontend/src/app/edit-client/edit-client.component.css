@@ -1,0 +1,16 @@
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.client-page {
+    padding: 20px 0;
+}
+
+#deleteuser {
+    margin-left: 10px;
+}
+
+#terug {
+    float: right;
+}

@@ -1,0 +1,94 @@
+<!--Showcase text van de pagina-->
+<div id="showcase">
+  <section class="section-component">
+    <div class="container">
+      <h1>Bekabeld internet doet het niet</h1>
+      <p><strong>Niets is vervelender dan een slechte internetverbinding. En al helemaal als het een bekabelde
+        verbinding is. We gaan samen onderzoeken waar het aan ligt en natuurlijk helpen we je met de oplossing.</strong>
+      </p>
+    </div>
+  </section>
+
+  <div class="services">
+    <div class="container">
+      <h2><strong>Checklist</strong></h2>
+
+      <button class="accordion">Check je modem</button>
+      <div class="panel">
+        <p>Geen storing gevonden in de storingschecker? Dan is er misschien iets met je modem aan de hand. Doen de
+          lampjes op het
+          modem het wel goed? Dat checken we samen met je in ons stappenplan.</p>
+        <br>
+        <!--      <a href="client-suggestions-internet-wifi-slow-modem-check" class="supportButton">Check je modem zo</a>-->
+      </div>
+
+      <button class="accordion">Reset je modem en extra internetpunt</button>
+      <div class="panel">
+        <p>Nog steeds geen internetverbinding? In veel gevallen helpt het om je modem en als je die hebt je extra
+          internetpunt
+          (router of access point) opnieuw op te starten. Daar helpen we je natuurlijk graag mee.</p>
+        <br>
+        <!--      <a href="client-suggestions-internet-wifi-slow-modem-resetten" class="supportButton">Reset je modem zo</a>-->
+      </div>
+
+      <button class="accordion">Controleer je computer</button>
+      <div class="panel">
+        <p>Heb je je modem en extra internetpunt al gereset en heb je nog steeds geen internet? We helpen je met de
+          instellingen
+          van de verbinding op je computer.</p>
+        <br>
+        <!--      <a href="client-suggestions-internet-wifi-slow-maak-verbinding" class="supportButton">Zoek juiste netwerk</a>-->
+      </div>
+
+      <button class="accordion">Sluit een pc of laptop rechtstreeks aan op je modem</button>
+      <div class="panel">
+        <p>
+          In de vorige stap zijn je modem en extra wifi-punt in de juiste volgorde gereset. Er komt ook een
+          internetsignaal
+          binnen, want de juiste lampjes branden op het modem. Toch is het probleem nog niet opgelost.
+
+          Controleer daarom je internetverbinding als je een pc of laptop direct op het modem aansluit met je
+          internetkabel.
+          Hiervoor kun je de kabel gebruiken die tussen je modem en je extra internetpunt zit. Heb je al een
+          rechtstreekse
+          verbinding, ga dan naar de volgende stap.
+
+          Sluit je computer met een internetkabel (UTP-kabel) rechtstreeks aan op het modem en check of je weer een
+          internetverbinding hebt.
+        </p>
+      </div>
+
+      <button class="accordion">Probeer een andere kabel</button>
+      <div class="panel">
+        <p>
+          Het probleem kan in de kabel zitten. Dit willen we graag uitsluiten. Hopelijk heb je nog een kabel (UTP of
+          netwerkkabel)
+          liggen. Sluit deze rechtstreeks aan op het modem en je computer.
+        </p>
+      </div>
+
+      <br><br>
+
+      <p>Heeft de informatie op deze pagina je geholpen? Zo nee, dan niet getreurd. Selecteer dan eerst je modem en stel
+        de vraag aan onze virtuele assistent.</p>
+
+      <h3><strong>Kies je modem</strong></h3>
+      <select name="modems" (change)="selectChangeHandler($event)" [(ngModel)]="selectedValue">
+        <option name="modems" *ngFor="let modem of modems" [value]="modem.idModem">
+          {{modem.modemNaam}}
+        </option>
+      </select>
+      <br><br>
+      <!--Buttons-->
+      <div class="service">
+
+        <!--       /**-->
+        <!--        * This method gets all tags and sessionId's-->
+        <!--        */-->
+        <a (click)="tagToTagService()" routerLink="/client-chat" style="float:left" class="supportButton">Stel een
+          vraag</a>
+      </div>
+    </div>
+
+  </div>
+</div>

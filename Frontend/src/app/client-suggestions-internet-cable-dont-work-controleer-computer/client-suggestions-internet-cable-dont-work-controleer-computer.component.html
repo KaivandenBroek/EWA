@@ -1,0 +1,135 @@
+<!--Showcase text van de pagina-->
+<div class="container">
+
+  <div class="services">
+
+    <!--Begin-->
+    <h1 style=" color:black">1.Herstart je apparaat</h1>
+
+    <H2><b>A.</b></H2>
+    <p> Misschien heb je je computer al opnieuw opgestart, dan kun je deze stap overslaan. Nog niet gedaan? Sluit je
+      computer helemaal af en start deze vervolgens weer op.</p>
+    <H2><b>B.</b></H2>
+    <p> Test nu of je internet weer werkt. Bekijk bijvoorbeeld een video op Youtube.</p>
+
+    <h1 style=" color:black">Is het probleem nu opgelost?</h1>
+
+    <div class="services">
+
+      <!--Buttons-->
+      <div class="cen">
+        <div class="service">
+          <button (click)="WiDraFunction()" onclick="document.getElementById('id01').style.display='block'"
+                  class="w3-button w3-black">Ja
+          </button>
+        </div>
+
+        <div class="cen">
+          <div class="service">
+            <button (click)="IVDFunction()" onclick="document.getElementById('id02').style.display='block'"
+                    class="w3-button w3-black">Nee
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--Pop-up 1-->
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <h4 style="text-align:center; color: greenyellow;"><b>Het probleem is opgelost</b></h4>
+
+          <div style="text-align: center;">
+
+            <p>
+
+              We zijn blij dat we je hebben kunnen helpen.
+              Vind je het ook leuk om mensen te helpen? Deel dan je kennis met andere Ziggo klanten via de Ziggo
+              Community.
+
+              Heb je nog een andere vraag? Vind het antwoord via onze Klantenservice.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--Pop-up 2-->
+    <div id="id02" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <h4 style="text-align:center; color: orange;"><b>2.Wat voor computer gebruik je?</b></h4>
+          <div style="text-align:center;">
+
+            <!--Windows-->
+            <div class="cen">
+              <div class="service">
+                <img src='../../assets/windows.jpg' width="42" height="42" id="windows">
+                <h2 style=" color:black" class="Windows">Windows</h2>
+              </div>
+
+              <!--MAC-->
+              <div class="service">
+                <img src='../../assets/mac.png' width="42" height="42" id="mac">
+                <h2 style=" color:black" class="Mac">MAC</h2>
+              </div>
+
+              <!--Stappen-->
+              <h4 style="text-align:center; color: orange;"><b>3.Start voor windows gebruik de probleem oplossen op &
+                voor mac moet de netwerkverbinding gecontrolleerd worden</b></h4>
+
+              <h6 style="text-align:left; color: orange;">Windows</h6>
+
+              <p><b>a.
+                In de startbalk van Windows computers kun je nagaan wat de netwerkstatus is van de verbinding met de
+                netwerkkabel. Gaat er iets mis dan wordt dit vaak aangegeven met een rood kruis of een uitroepteken.
+
+                Druk rechtsonder met je rechter muisknop op het netwerk icoontje. </b></p>
+
+              <p><b>b.
+                Kies vervolgens voor Problemen oplossen.</b></p>
+
+              <br>
+
+              <h6 style="text-align:left; color: orange;">Mac</h6>
+
+              <p><b>a.
+                Klik rechtsboven op het wifi icoontje en kies voor Open netwerkvoorkeuren... </b></p>
+
+              <p><b>b.
+                Zorg dat je bekabelde verbinding geselecteerd is en controleer de status en instellingen.</b></p>
+
+              <br>
+
+              <h4 style="text-align:left; color: orange;">Contacteer onze virtuele assistent als je uw probleem nog
+                steeds neit is opgelost</h4>
+
+              <button style="float:right" class="supportButton" routerLink="/client-chat">Laten we het samen verder
+                oplossen
+              </button>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

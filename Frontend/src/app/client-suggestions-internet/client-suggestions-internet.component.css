@@ -1,0 +1,112 @@
+.section-component {
+  background-color: #1C1D1E;
+  padding: 30px 0px;
+}
+
+.section-component h1 {
+  color: #f48c00;
+  font-size: 2.25rem;
+  line-height: 1.11;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.section-component p {
+  color: #fff;
+}
+
+.service{
+  display: inline-block;
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.service:hover{
+  background: #ddd;
+}
+
+.service i{
+   color: #e67e22;
+   font-size: 34px;
+   margin-right: 10px;
+ }
+
+.service p{
+  color: gray;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.services {
+  background-color: #f1f1f1;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.w3-modal {
+  padding-top: 300px;
+}
+
+.w3-modal-content {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.33);
+  box-shadow: 0 0 20px rgba(0,0,0,0.33);
+}
+
+.w3-modal-content h4 {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .service{
+    width: 50%
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .service {
+    width: 100%
+  }
+}
+
+.w3-button w3-black{
+  font-size: 18px;
+  text-decoration:none;
+  color:#FFA500;
+  border:#FFA500 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top:70px;
+}
+
+.w3-button w3-black:hover{
+  background:#FFA500;
+  color:#fff;
+}
+
+#showcase .buttonRight, #showcase .buttonLeft{
+  font-size: 18px;
+  text-decoration:none;
+  color:#FFA500;
+  border:#FFA500 1px solid;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  width: 250px;
+  padding: 10px;
+  display: inline-block;
+  text-align:center;
+}
+
+#showcase .buttonRight:hover{
+  background:#FFA500;
+  color:#fff;
+}
+
+#showcase .buttonLeft:hover{
+  background:#FFA500;
+  color:#fff;
+}

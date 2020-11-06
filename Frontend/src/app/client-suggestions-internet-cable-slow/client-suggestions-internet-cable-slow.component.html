@@ -1,0 +1,86 @@
+<!--Showcase text van de pagina-->
+<div id="showcase">
+  <section class="section-component">
+    <div class="container">
+      <h1>Traag internet met een kabel</h1>
+      <p><strong>Je zou het misschien niet verwachten, maar ook internet met een kabel kan soms traag zijn. Waar dit aan
+        ligt? We zoeken het samen met je uit.</strong></p>
+    </div>
+  </section>
+
+  <div class="services">
+    <div class="container">
+      <h2><strong>Checklist</strong></h2>
+
+      <button class="accordion">Reset je modem en extra internetpunt</button>
+      <div class="panel">
+        <p>In veel gevallen helpt het om je modem en - als je die hebt - je extra internetpunt (router of access point)
+          opnieuw op
+          te starten. Daar helpen we je natuurlijk graag mee.</p>
+        <br>
+        <!--      <a href="client-suggestions-internet-wifi-slow-modem-check" class="supportButton">Check je modem zo</a>-->
+      </div>
+
+      <button class="accordion">Check de lampjes op je modem</button>
+      <div class="panel">
+        <p>De lampjes op het modem geven aan of er een goed internetsignaal binnenkomt. We laten je in dit stappenplan
+          zien of de
+          juiste lampjes op jouw modem branden.</p>
+        <br>
+        <!--      <a href="client-suggestions-internet-wifi-slow-modem-resetten" class="supportButton">Reset je modem zo</a>-->
+      </div>
+
+      <button class="accordion">Controleer je computer</button>
+      <div class="panel">
+        <p>Je internetsnelheid deel je met alle apparaten die aan je modem verbonden zijn. Controleer dus of er niet een
+          ander
+          apparaat aan het downloaden is wanneer je de snelheidstest doet. Check daarnaast of er geen andere zware
+          programma's
+          open staan of je computer al bijna vol is. En gooi eens je tijdelijke internetbestanden weg.
+
+          Nog problemen? Controleer dan de maximale snelheid van je netwerkkaart. Is deze nog wel snel genoeg?</p>
+        <br>
+        <!--      <a href="client-suggestions-internet-wifi-slow-maak-verbinding" class="supportButton">Zoek juiste netwerk</a>-->
+      </div>
+
+      <button class="accordion">Check je netwerkkabel</button>
+      <div class="panel">
+        <p>
+          Controleer of je de juiste netwerkkabel gebruikt. Deze kabel noem je ook wel internetkabel, UTP-kabel of
+          ethernetkabel.
+          Netwerkkabels van slechte kwaliteit verminderen de internetsnelheid.
+
+          Let bij een netwerkkabel op het volgende:
+
+          - Op de zijkant van de kabel staat CAT5E of CAT6.
+
+          - Er zitten geen scheurtjes of knikjes in.
+
+          - Rol de kabel niet op.
+
+          Wil je een nieuwe netwerkkabel? Bestel die dan bij deze verkooppunten. Of bestel een monteur, die helpt je ook
+          graag.
+        </p>
+      </div>
+
+      <br><br>
+
+      <p>Heeft de informatie op deze pagina je geholpen? Zo nee, dan niet getreurd. Selecteer dan eerst je modem en stel
+        de vraag aan onze virtuele assistent.</p>
+
+      <h3><strong>Kies je modem</strong></h3>
+      <select name="modems" (change)="selectChangeHandler($event)" [(ngModel)]="selectedValue">
+        <option name="modems" *ngFor="let modem of modems" [value]="modem.idModem">
+          {{modem.modemNaam}}
+        </option>
+      </select>
+      <br><br>
+      <!--Buttons-->
+      <div class="service">
+        <a (click)="tagToTagService()" routerLink="/client-chat" style="float:left" class="supportButton">Stel een
+          vraag</a>
+      </div>
+    </div>
+
+  </div>
+</div>

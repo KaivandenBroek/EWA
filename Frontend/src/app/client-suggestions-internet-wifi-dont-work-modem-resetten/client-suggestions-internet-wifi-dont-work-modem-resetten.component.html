@@ -1,0 +1,146 @@
+<!--Showcase text van de pagina-->
+<div class="container">
+
+  <div class="services">
+
+    <!--Begin-->
+    <h1 style=" color:black">1.Selecteer je modem</h1>
+
+    <!--Connectbox-->
+    <div class="cen">
+      <div class="service">
+        <a>
+          <button (click)="WiDraFunction()" onclick="document.getElementById('id01').style.display='block'"
+                  class="w3-button w3-black"><img src='../../assets/Modem.png' width="42" height="42" id="connectbox">
+          </button>
+        </a>
+        <h2 style=" color:black" class="Connectbox">Connectbox</h2>
+      </div>
+
+      <!--Technicolor -->
+      <div class="service">
+        <a>
+          <button (click)="IVDFunction()" onclick="document.getElementById('id01').style.display='block'"
+                  class="w3-button w3-black"><img src='../../assets/Technicolor.jpg' width="42" height="42"
+                                                  id="technicolor"></button>
+        </a>
+        <h2 style=" color:black" class="Technicolor">Technicolor</h2>
+      </div>
+
+      <!--Hitron-->
+      <div class="service">
+        <a>
+          <button (click)="ITVFunction()" onclick="document.getElementById('id01').style.display='block'"
+                  class="w3-button w3-black"><img src='../../assets/Hitron.jpg' width="42" height="42" id="hitron">
+          </button>
+        </a>
+        <h2 style=" color:black" class="Hitron">Hitron</h2>
+      </div>
+
+      <!--Cisco-->
+      <div class="service">
+        <a>
+          <button (click)="VTFunction()" onclick="document.getElementById('id01').style.display='block'"
+                  class="w3-button w3-black"><img src='../../assets/Cisco.jpg' width="42" height="42" id="cisco">
+          </button>
+        </a>
+        <h2 style=" color:black" class="Cisco">Cisco</h2>
+      </div>
+
+      <!--Ubee -->
+      <div class="service">
+        <a>
+          <button (click)="INFunction()" onclick="document.getElementById('id01').style.display='block'"
+                  class="w3-button w3-black"><img src='../../assets/Ubee.jpg' width="42" height="42" id="ubee"></button>
+        </a>
+        <h2 style=" color:black" class="Ubee">Ubee</h2>
+      </div>
+
+      <!--Thomson-->
+      <div class="service">
+        <a>
+          <button (click)="ITVFunction()" onclick="document.getElementById('id01').style.display='block'"
+                  class="w3-button w3-black"><img src='../../assets/Thomson.jpg' width="42" height="42" id="thomson">
+          </button>
+        </a>
+        <h2 style=" color:black" class="Interactieve-TV">Thomson</h2>
+      </div>
+
+      <!--Andere modems-->
+      <div class="service">
+        <a>
+          <button (click)="VTFunction()" onclick="document.getElementById('id01').style.display='block'"
+                  class="w3-button w3-black"><img src='../../assets/AndereModem.jpg' width="42" height="42"
+                                                  id="andereModem"></button>
+        </a>
+        <h2 style=" color:black" class="Andere-Modem">Andere Modem</h2>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--Pop-up 1-->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <h4 style="text-align:center; color: black;"><b> 2.Herstart je wifi-modem</b></h4>
+
+        <div style="text-align: left;">
+
+          <p>
+            A.Haal de stroomstekker van de Connectbox uit het stopcontact.
+          </p>
+
+          <p>
+            B.Wacht 1 minuut.
+          </p>
+
+          <p>
+            C.Plaats de stroomstekker terug in het stopcontact.
+          </p>
+
+          <p>
+            D.Wacht tenminste 5 minuten. Je Connectbox is dan volledig opnieuw opgestart.
+          </p>
+
+          <br>
+
+          <h4 style="text-align:center; color: black;"><b> 3.Check of het wifi-modem goed is aangesloten</b></h4>
+
+          <p>
+            Voor een goed werkend internetsignaal moet het wifi-modem juist met de kabel zijn aangesloten op de
+            hoofdaansluiting van Ziggo. Dat is het punt waar de groene kabel je woning binnenkomt. Meestal is dat in de
+            meterkast of, in oudere huizen, in de woonkamer.
+
+            Op de hoofdaansluiting zit een verdeler of versterker aangesloten. Vanaf deze verdeler of versterker gaat er
+            een kabel naar het modem. Deze is meestal voorzien van een schroef- of steekverbinding. Sluit deze kabel aan
+            op de DATA aansluiting van de verdeler of versterker. De andere kant van de kabel hoort goed vast te zitten
+            op het modem.
+
+            Als je modem niet op deze manier is aangesloten, kan dat voor een slechte internetverbinding zorgen.
+          </p>
+
+          <br>
+
+          <h4 style="text-align:center; color: black;"><b> Als de info op deze pagina niet geholpen heeft om het
+            probleem te verhelpen, contacteer dan een verituele assistent van ons.</b></h4>
+
+          <br>
+
+          <button style="float:right" class="supportButton" routerLink="/client-chat">Laten we het samen verder
+            oplossen
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+

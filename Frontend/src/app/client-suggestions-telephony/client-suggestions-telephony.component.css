@@ -1,0 +1,53 @@
+.service{
+  display: inline-block;
+  width: calc(100% / 2);
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.service:hover{
+  background: #ddd;
+}
+.service i{
+  color: #e67e22;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.service h1{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+.service p{
+  color: gray;
+  font-size: 15px;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .service{
+    width: 50%
+  }
+}
+@media screen and (max-width: 500px) {
+  .service{
+    width: 100%
+  }
+}
+
+#showcase .button{
+  font-size: 18px;
+  text-decoration:none;
+  color:#FFA500;
+  border:#FFA500 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top:70px;
+}
+
+#showcase .button:hover{
+  background:#FFA500;
+  color:#fff;
+}

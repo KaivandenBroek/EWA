@@ -1,0 +1,58 @@
+<div class="dashboard">
+  <div class="container">
+    <div class="beforetext">
+      <h4>Vind hier antwoord op jouw vragen door op <a href="/client-suggestions" style=" color:orange">Help me </a>
+        button te klikken.</h4>
+    </div>
+    <div class="dashboardBox">
+      <div class="chats helpchat">
+        <div class="newBanner">
+          <h3 class="textBanner">Help me</h3>
+        </div>
+        <div class="helpme">
+          <button (click)="createIssue(authenticationService.currentUserValue.idUser)" routerLink="/client-suggestions"
+                  class="btn startchat ziggo-oranje">Help me
+          </button>
+        </div>
+      </div>
+      <div class="chats">
+        <div class="newBanner">
+          <h3 class="textBanner">Open chats ({{openChats.length}})</h3>
+        </div>
+        <div class="listItem">
+          <ul *ngFor="let chat of openChats">
+            <li>
+              <a href="client-chat">
+                <button (click)="sendId(chat?.sessionId)"
+                        class="listButton">
+                  Username: {{chat?.username + " "}}<br>
+                  Date: {{chat?.date + " "}}<br>
+                  Session ID: {{chat?.sessionId}}
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="chats">
+        <div class="newBanner">
+          <h3 class="textBanner">Geschiedenis van chats ({{closedChats.length}})</h3>
+        </div>
+        <div class="listItem">
+          <ul *ngFor="let chat of closedChats">
+            <li>
+              <a href="client-chat">
+                <button (click)="sendId(chat?.sessionId)"
+                        class="listButton">
+                  Username: {{chat?.username + " "}}<br>
+                  Date: {{chat?.date + " "}}<br>
+                  Session ID: {{chat?.sessionId}}
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

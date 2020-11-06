@@ -1,0 +1,7 @@
+/* AUTOMATICALLY GENERATED ON Mon Jun 03 15:43:39 CEST 2019*/
+/* DO NOT EDIT */
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "DataSourceDefinition", "**";
+};
+

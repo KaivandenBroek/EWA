@@ -1,0 +1,55 @@
+<div class="navbar navbar-default">
+  <div class="container">
+    <div id="navbar-main">
+      <a routerLink="/" class="navbar-brand"><img src="\assets\ziggo_logo.png" alt="ziggo-logo"></a>
+      <ul class="nav navbar-nav">
+        <li><a *ngIf="!auth.currentUserValue" routerLink="/">Home</a></li>
+        <li *ngIf="auth.currentUserValue">
+          <ul class="nav navbar-nav">
+            <li> <a *ngIf="auth.currentUserValue.roleId == 3" routerLink="/client-dashboard">Dashboard</a></li>
+            <li> <a *ngIf="auth.currentUserValue.roleId == 2" routerLink="/employee-dashboard">Dashboard</a></li>
+            <li> <a *ngIf="auth.currentUserValue.roleId == 1" routerLink="/admin-dashboard">Dashboard</a></li>
+          </ul>
+      </li>
+      </ul>
+      <ul class="nav navbar-nav">
+        <li *ngIf="auth.currentUserValue">
+        <ul class="nav navbar-nav">
+          <li><a *ngIf="auth.currentUserValue.roleId == 3" routerLink="/client-edit">Edit credentials</a> </li>
+          <li><a *ngIf="auth.currentUserValue.roleId == 1" routerLink="/admin-statistics">Statistics</a> </li>
+          <li><a *ngIf="auth.currentUserValue.roleId == 1" routerLink="/admin-create-employee">Register</a></li>
+          <li *ngIf="auth.currentUserValue.roleId == 1" class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage Users</a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="/employees">Employees</a></li>
+            </ul>
+          </li>
+        </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li *ngIf="!auth.currentUserValue" class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <span class="glyphicon glyphicon-user"></span> 
+            My Ziggo
+            <span class="glyphicon glyphicon-chevron-down"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="/login">Inloggen</a></li>
+            <li><a routerLink="/register">Registreren</a></li>
+          </ul>
+        </li>
+        <li *ngIf="auth.currentUserValue">
+          <a class="dropdown-toggle" data-toggle="dropdown">
+            <span class="glyphicon glyphicon-user"></span> 
+            Welkom {{ auth.currentUserValue.username }}
+            <span class="glyphicon glyphicon-chevron-down"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li *ngIf="auth.currentUserValue"><a (click)="auth.logout()" routerLink="/">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

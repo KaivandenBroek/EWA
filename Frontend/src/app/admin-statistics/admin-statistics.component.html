@@ -1,0 +1,31 @@
+<div class="page">
+  <div class="container">
+    <div class="left-side">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <p class="panel-title">{{title}} {{today | date}}</p>
+        </div>
+        <div class="search">
+          <select name="employee" (change)="selectChangeHandler($event)" [(ngModel)]="selectedValue">
+            <option name="employees" *ngFor="let e of employees" [value]="e.idUser">
+              {{e.username}} {{e.lastName}}
+            </option>
+          </select>
+          <div class="rating">
+            <h1>Average rating {{countAllEntries}}</h1>
+            <ngb-rating [(rate)]="currentRate" [readonly]="true" max="5"></ngb-rating>
+          </div>
+        </div>
+        <div class="col">
+          <div class="chart">
+            <div class="dateText">
+            </div>
+            <div ngFor="chart">
+              <canvas></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+/* AUTOMATICALLY GENERATED ON Mon Jun 03 15:43:40 CEST 2019*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.WebUserDataPermission "/";
+  permission javax.security.jacc.WebResourcePermission "/";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
+  permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "nl.hva.web.ziggo.Resources.HelloServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "FacesServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "nl.hva.web.ziggo.config.App", "**";
+  permission javax.security.jacc.WebRoleRefPermission "default", "**";
+};
+

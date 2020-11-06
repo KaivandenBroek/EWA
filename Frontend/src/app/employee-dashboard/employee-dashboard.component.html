@@ -1,0 +1,72 @@
+<div class="dashboard">
+  <div class="container">
+    <div class="dashboardBox">
+      <div class="chats">
+        <div class="newBanner">
+          <h3 class="textBanner">New chats ({{newChats.length}})</h3>
+        </div>
+        <div class="listItem">
+          <ul *ngFor="let chat of newChats">
+            <li>
+              <a href="employee-chat">
+                <button (click)="displayPermission(chat?.sessionId)" class="listButton">
+                  Username: {{chat?.username + " "}}<br>
+                  Date: {{chat?.date + " "}}<br>
+                  Session ID: {{chat?.sessionId}}
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="chats">
+        <div class="newBanner">
+          <h3 class="textBanner">Open chats ({{openChats.length}})</h3>
+        </div>
+        <div class="listItem">
+          <ul *ngFor="let chat of openChats">
+            <li>
+              <a href="employee-chat">
+                <button (click)="sendId(chat?.sessionId)" class="listButton">
+                  Username: {{chat?.username + " "}}<br>
+                  Date: {{chat?.date + " "}}<br>
+                  Session ID: {{chat?.sessionId}}
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="chats">
+        <div class="newBanner">
+          <h3 class="textBanner">Closed chats ({{closedChats.length}})</h3>
+        </div>
+        <div class="listItem">
+          <ul *ngFor="let chat of closedChats">
+            <li>
+              <a href="employee-chat">
+                <button (click)="sendId(chat?.sessionId)" class="listButton">
+                  Username: {{chat?.username + " "}}<br>
+                  Date: {{chat?.date + " "}}<br>
+                  Session ID: {{chat?.sessionId}}
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="chats">
+        <h3 class="tagBanner">Tags</h3>
+        <div class="container-fluid">
+          <div class="row">
+            <ul *ngFor="let tag of tags">
+              <li>
+                <button class="badge" (click)="getIssueBySpecificTag(tag)">{{tag}}</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

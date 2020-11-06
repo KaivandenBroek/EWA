@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="main-content">
+    <div class="title">
+      <h1>Welcome <strong>{{currentUser.username}}</strong></h1>
+      <div>The overall statistics of today: {{today | date}}</div>
+    </div>
+    <div ngFor="chart">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="main">
+      <div class="widget">
+        <div class="title">Active customers</div>
+        <table class="table">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Username</th>
+          </tr>
+          <tr *ngFor="let user of users">
+            <td> {{user.idUser}}</td>
+            <td> {{user.username}}</td>
+          </tr>
+        </table>
+        <div class="chart"></div>
+      </div>
+      <div class="widget">
+        <div class="title">Active employees</div>
+        <div class="chart">
+          <table class="table">
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Username</th>
+            </tr>
+            <tr *ngFor="let employee of employees">
+              <td> {{employee.idUser}}</td>
+              <td> {{employee.username}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

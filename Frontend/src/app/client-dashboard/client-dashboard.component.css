@@ -1,0 +1,198 @@
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #e67e22;
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-top: 40px
+}
+
+h3 {
+  padding: 0px;
+  color: orange;
+}
+
+.chats {
+  background: #f6f7f8;
+  padding: 0px 30px 10px;
+}
+
+.helpchat {
+  height: 150px;
+}
+
+.dashboardBox {
+  margin: 30px 0px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px 2em;
+}
+
+.dashboard {
+    padding: 20px 0px;
+}
+.startchat {
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+}
+#startchat .kolompanel {
+    height: 147px;
+}
+
+.textBanner {
+  margin: 10px 0px 20px 0px;
+}
+
+.kolom-panel {
+  background-color: #f8f8f8;
+  padding: 0px 30px 10px;
+}
+.dot {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    background: #bbbbbb;
+}
+.chat {
+    background-color: #cecece;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.chat .tijd {
+    float: right;
+}
+
+.openDot {
+  padding-top: 10px;
+  padding-left: 17px;
+  margin-top: 10px;
+  margin-left: -50px;
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  border:0.15em solid #CCCCCC;
+}
+
+.listButton{
+  width: 100%;
+  display: inline-block;
+  padding: 0.1em 0.72em;
+  margin-bottom: 20px;
+  border: 0.15em solid #CCCCCC;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Segoe UI','Roboto',sans-serif;
+  font-weight: 400;
+  color: #000000;
+  background-color: #d9d9d9;
+}
+
+.listButton:active{
+  background-color:#d9d9d9;
+}
+
+li:hover, .listButton:hover, .badge:hover {
+  color: #ff9900;
+}
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}

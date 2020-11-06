@@ -1,0 +1,92 @@
+.rating {
+  padding-right: 10px;
+  float: right;
+  color: yellow;
+  font-size: 2rem;
+}
+
+.page {
+  padding: 20px;
+}
+
+
+.editButton {
+  /*float: right;*/
+
+}
+
+.rating {
+  color: #ffce56;
+}
+
+.left-side {
+  width: 75%;
+  margin: auto;
+  flex: auto;
+}
+
+.dateText {
+  font-weight: 100;
+  color: #333;
+  font-size: 18px;
+  text-align: -moz-center;
+  padding-top: -40px;
+}
+
+.right-side {
+  float: right;
+  margin-right: 40px;
+  background-color: orange;
+}
+
+.bg-primary {
+  color: #333 !important;
+}
+
+.panel-primary {
+  border-color: orange;
+}
+
+.panel-heading {
+  background-color: orange;
+  border: none;
+}
+
+P {
+  text-align: center;
+
+}
+
+h4 {
+  font-weight: 100;
+  color: #333;
+  font-size: 20px;
+  text-align: center;
+}
+
+search {
+  width: 50px;
+}
+
+h3 {
+  font-weight: 100;
+  color: #333;
+  font-size: 20px;
+  margin-left: 250px;
+}
+
+h1 {
+  font-weight: 100;
+  color: #333;
+  font-size: 20px;
+
+}
+
+pre {
+  background-color: #f5f5f5;
+  padding: 15px;
+}
+
+
+
+
